@@ -1,4 +1,5 @@
 ﻿using ComicGeek.Domain.Common;
+using System.Diagnostics.CodeAnalysis;
 
 namespace ComicGeek.Domain.Comics;
 
@@ -8,6 +9,10 @@ public sealed class Comic : Entity
     public string Synopsis { get; set; } = default!;
     public string CoverUrl { get; set; } = default!;
 
+    /// <summary>
+    /// Entity Framework Constructor
+    /// </summary>
+    [ExcludeFromCodeCoverage]
     private Comic() { }
 
     private Comic(string name, string synopsis, string coverUrl)
