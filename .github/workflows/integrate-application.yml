@@ -1,0 +1,25 @@
+name: Integrate ComicGeek Application
+
+on:
+  pull_request: 
+    branches:
+      - main
+    paths: 
+      - 'src/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup dotnet 8.x.x
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.x.x
+          cache: true
+      - name: Install dependencies
+        run: dotnet restore
+      - name: Build
+        run: dotnet build
+      - name: Test with the dotnet CLI
+        run: dotnet test
