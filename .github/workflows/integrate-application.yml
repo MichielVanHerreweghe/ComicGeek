@@ -22,7 +22,7 @@ jobs:
       - name: Build
         run: dotnet build --configuration Release --no-restore
       - name: Test with the dotnet CLI
-        run: dotnet test --no-restore --verbosity normal --logger trx
+        run: dotnet test --no-restore --verbosity normal --logger trx --collect:"XPlat Code Coverage"
       - uses: bibipkins/dotnet-test-reporter@v1.4.0
         with:
             github-token: ${{ secrets.GITHUB_TOKEN }}
