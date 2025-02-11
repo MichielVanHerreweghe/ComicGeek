@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D545AA73-87F4-44D2-B758-114286561716}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{819C04A4-58EF-4152-8229-1816CD9E0C30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComicGeek.Domain", "src\ComicGeek.Domain\ComicGeek.Domain.csproj", "{907E957F-2594-4E46-868F-6912E660E25E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComicGeek.Domain.Tests", "tests\ComicGeek.Domain.Tests\ComicGeek.Domain.Tests.csproj", "{538EBC7C-F8D7-4911-8BB9-5FA3D3973F45}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{907E957F-2594-4E46-868F-6912E660E25E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{907E957F-2594-4E46-868F-6912E660E25E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{907E957F-2594-4E46-868F-6912E660E25E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{907E957F-2594-4E46-868F-6912E660E25E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{538EBC7C-F8D7-4911-8BB9-5FA3D3973F45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{538EBC7C-F8D7-4911-8BB9-5FA3D3973F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{538EBC7C-F8D7-4911-8BB9-5FA3D3973F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{538EBC7C-F8D7-4911-8BB9-5FA3D3973F45}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{907E957F-2594-4E46-868F-6912E660E25E} = {D545AA73-87F4-44D2-B758-114286561716}
+		{538EBC7C-F8D7-4911-8BB9-5FA3D3973F45} = {819C04A4-58EF-4152-8229-1816CD9E0C30}
+	EndGlobalSection
+EndGlobal
