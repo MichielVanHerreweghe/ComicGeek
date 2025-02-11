@@ -20,6 +20,14 @@ jobs:
       - name: Install dependencies
         run: dotnet restore
       - name: Build
-        run: dotnet build
+        run: dotnet build --configuration Release --no-restore
       - name: Test with the dotnet CLI
-        run: dotnet test
+        run: dotnet test --no-restore --verbosity normal --logger trx
+      - uses: bibipkins/dotnet-test-reporter@v1.4.0
+        with:
+            github-token: ${{ secrets.GITHUB_TOKEN }}
+            comment-title: 'Test Results'
+            results-path: ./TestResults/*.trx
+            coverage-path: ./TestResults/**/coverage.cobertura.xml
+            coverage-type: cobertura
+            coverage-threshold: 80
