@@ -1,5 +1,8 @@
-﻿namespace ComicGeek.Domain.Common;
+﻿using System.Diagnostics.CodeAnalysis;
 
+namespace ComicGeek.Domain.Common;
+
+[ExcludeFromCodeCoverage]
 public class Result
 {
     private readonly bool _isSuccess;

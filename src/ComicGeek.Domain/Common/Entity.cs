@@ -1,9 +1,12 @@
-﻿namespace ComicGeek.Domain.Common;
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace ComicGeek.Domain.Common;
 
 /// <summary>
 /// Base class for all Entities, see
 /// <seealso cref="https://enterprisecraftsmanship.com/posts/entity-base-class/"/> for more information.
 /// </summary>
+[ExcludeFromCodeCoverage]
 public abstract class Entity
 {
     public int Id { get; protected set; }
