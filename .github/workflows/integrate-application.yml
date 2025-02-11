@@ -8,8 +8,10 @@ on:
       - 'src/**'
     types: [opened, synchronize, reopened, ready_for_review]
 
-permissions: 
+permissions:
+  contents: read
   pull-requests: write
+  checks: write 
 
 jobs:
   build:
@@ -25,12 +27,12 @@ jobs:
       - name: Build
         run: dotnet build --configuration Release --no-restore
       - name: Test with the dotnet CLI
-        run: dotnet test --no-restore --verbosity normal --logger trx --collect:"XPlat Code Coverage"
+        run: dotnet test --no-restore --verbosity normal --logger trx --collect:"XPlat Code Coverage" --results-directory ./TestResults
       - uses: bibipkins/dotnet-test-reporter@v1.4.0
         with:
             github-token: ${{ secrets.GITHUB_TOKEN }}
             comment-title: 'Test Results'
-            results-path: ./**/*.trx
-            coverage-path: ./**/coverage.cobertura.xml
+            results-path: ./TestResults/*.trx
+            coverage-path: ./TestResults/**/coverage.cobertura.xml
             coverage-type: cobertura
             coverage-threshold: 80
