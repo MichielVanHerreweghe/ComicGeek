@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComicGeek.Domain", "src\Com
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComicGeek.Domain.Tests", "tests\ComicGeek.Domain.Tests\ComicGeek.Domain.Tests.csproj", "{538EBC7C-F8D7-4911-8BB9-5FA3D3973F45}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComicGeek.Persistence", "src\ComicGeek.Persistence\ComicGeek.Persistence.csproj", "{4A415613-5029-4095-B7CB-1A4DF0AC3BA7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{538EBC7C-F8D7-4911-8BB9-5FA3D3973F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{538EBC7C-F8D7-4911-8BB9-5FA3D3973F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{538EBC7C-F8D7-4911-8BB9-5FA3D3973F45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A415613-5029-4095-B7CB-1A4DF0AC3BA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A415613-5029-4095-B7CB-1A4DF0AC3BA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A415613-5029-4095-B7CB-1A4DF0AC3BA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A415613-5029-4095-B7CB-1A4DF0AC3BA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,5 +38,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{907E957F-2594-4E46-868F-6912E660E25E} = {D545AA73-87F4-44D2-B758-114286561716}
 		{538EBC7C-F8D7-4911-8BB9-5FA3D3973F45} = {819C04A4-58EF-4152-8229-1816CD9E0C30}
+		{4A415613-5029-4095-B7CB-1A4DF0AC3BA7} = {D545AA73-87F4-44D2-B758-114286561716}
 	EndGlobalSection
 EndGlobal
