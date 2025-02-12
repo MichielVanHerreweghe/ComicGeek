@@ -1,5 +1,4 @@
 ﻿using ComicGeek.Domain.Common;
-using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 
 namespace ComicGeek.Domain.Comics;
@@ -12,12 +11,12 @@ public sealed class ComicSeries : Entity
 
     public IReadOnlyCollection<Comic> Comics => _comics;
 
-    private ComicSeries() { }
-
     /// <summary>
     /// Entity Framework Constructor
     /// </summary>
     [ExcludeFromCodeCoverage]
+    private ComicSeries() { }
+
     private ComicSeries(string name)
     {
         Name = Guard.Against
